@@ -4,6 +4,7 @@ import 'package:vania_crud_tio/app/http/controllers/home_controller.dart';
 import 'package:vania_crud_tio/app/http/controllers/login_controller.dart';
 import 'package:vania_crud_tio/app/http/controllers/orderitems_controller.dart';
 import 'package:vania_crud_tio/app/http/controllers/orders_controller.dart';
+import 'package:vania_crud_tio/app/http/controllers/register_controller.dart';
 import 'package:vania_crud_tio/app/http/controllers/vendors_controller.dart';
 import 'package:vania_crud_tio/app/http/controllers/productnotes_controller.dart';
 import 'package:vania_crud_tio/app/http/controllers/products_controller.dart';
@@ -45,5 +46,6 @@ class ApiRoute implements Route {
     Router.delete('/delete_products/{id}', productsController.destroy);
 
     Router.post('/login', loginController.login);
+    Router.post('/register', registerController.register);
   }
 }
